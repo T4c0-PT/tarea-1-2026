@@ -1,0 +1,7 @@
+C:\Users\PC\source\repos\tarea1-2026\tarea1-2026\bin\Debug\tarea1-2026.exe.config
+C:\Users\PC\source\repos\tarea1-2026\tarea1-2026\bin\Debug\tarea1-2026.exe
+C:\Users\PC\source\repos\tarea1-2026\tarea1-2026\bin\Debug\tarea1-2026.pdb
+C:\Users\PC\source\repos\tarea1-2026\tarea1-2026\obj\Debug\tarea1-2026.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\tarea1-2026\tarea1-2026\obj\Debug\tarea1-2026.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\tarea1-2026\tarea1-2026\obj\Debug\tarea1-2026.exe
+C:\Users\PC\source\repos\tarea1-2026\tarea1-2026\obj\Debug\tarea1-2026.pdb
