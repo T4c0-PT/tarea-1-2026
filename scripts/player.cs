@@ -6,37 +6,31 @@ using System.Threading.Tasks;
 
 namespace tarea1_2026.scripts
 {
-    internal class player
+    internal class player : Character
     {
-        private string name;
-        private float health, damaged;
-        private bool isalive;
-        private int level;
+        private int level , coins;
 
         public player(string name, float health , float damaged)
         {
             this.name = name;
             this.health = health;
             this.damaged = damaged;
+            this.isalive = true;
+            this.level = 1;
+            this.coins = 0;
         }
 
-        public void TakeDamage(float damage)
-        {
-            health -= damage;
-            if (health < 0)
-            {
-                health = 0;
-            }
-        }
+        public float GetLevel() { return level; }
+        public void AddHealth(float amount){health += amount;}
+        public void AddDamage(float amount) { damaged += amount; }
+        public void AddCoins(int amount) { coins += amount; }
+        public int Getcoins() { return coins; }
 
-        public float GetDamage()
+        public void LevelUp()
         {
-            return damaged;
-        }
-
-        public bool IsAlive()
-        {
-            return isalive;
+            level++;
+            health += 10;
+            damaged += 2;
         }
 
 

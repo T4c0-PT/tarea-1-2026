@@ -13,29 +13,45 @@ namespace tarea1_2026.scripts
             Console.WriteLine("Opciones del juego:");
             Console.WriteLine("1. Iniciar juego");
             Console.WriteLine("2. Salir");
-            Console.WriteLine("Ingrese el número de la opción deseada:");
             string input = Console.ReadLine();
             switch (input)
             {
                 case "1":
                     Game game = new Game();
+                    Console.Clear();
                     game.World();
                     break;
                 case "2":
                     Console.WriteLine("Saliendo del juego...");
-                    Environment.Exit(0);
                     break;
                 default:
-                    Console.WriteLine("Opción inválida. Intente nuevamente.");
+                    Console.WriteLine("Opción inválida. Intente nuevamente.");              
                     Start();
                     break;
             }
         }
 
-        public void HUD()
-        { 
-            
-        
+
+        public void GameOver(player player)
+        {
+            Console.WriteLine("Game Over \nScore: ");
+            Console.WriteLine($"Nombre del jugador: {player.GetName()} Level: {player.GetLevel()} Coins: {player.Getcoins()}\n");
+            Console.WriteLine("1. Reiniciar juego");
+            Console.WriteLine("2. Salir");
+            string input = Console.ReadLine();
+            switch (input)
+            {
+                case "1":
+                    Start();
+                    break;
+                case "2":
+                    Console.WriteLine("Saliendo del juego...");
+                    break; 
+                default:
+                    Console.WriteLine("Opción inválida. Intente nuevamente.");
+                    GameOver(player);
+                    break;
+            }
         }
     }
 }
